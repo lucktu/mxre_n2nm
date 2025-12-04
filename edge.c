@@ -37,6 +37,9 @@
 #include <mbedtls/version.h>
 #elif USE_GCRYPT
 #include <gcrypt.h>
+#elif USE_BCRYPT
+#include <windows.h>
+#include <bcrypt.h>
 
 // version stored by gcry_check_version
 char const* gcrypt_version;

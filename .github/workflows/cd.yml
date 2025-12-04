@@ -23,109 +23,109 @@ jobs:
       matrix:
         include:
 
-#          - target: x86_64-linux-musl_AES
-#            os: ubuntu-latest
-#            URL: x86_64-linux-musl
-#            OPENSSL_TARGET: linux-x86_64
-#          - target: x86_64-linux-musl
-#            os: ubuntu-latest
-#            URL: x86_64-linux-musl
-#            OPENSSL_TARGET: linux-x86_64
-#
+          - target: x86_64-linux-musl_AES
+            os: ubuntu-latest
+            URL: x86_64-linux-musl
+            OPENSSL_TARGET: linux-x86_64
+          - target: x86_64-linux-musl
+            os: ubuntu-latest
+            URL: x86_64-linux-musl
+            OPENSSL_TARGET: linux-x86_64
+
           - target: x86_64-pc-windows_AES
             os: windows-latest
             ARCH: x64
             OPENSSL_TARGET: VC-WIN64A
             MSVC_ARCH: x64
-#          - target: x86_64-pc-windows
-#            os: windows-latest
-#            ARCH: x64
-#            OPENSSL_TARGET: VC-WIN64A
-#            MSVC_ARCH: x64
-#
+          - target: x86_64-pc-windows
+            os: windows-latest
+            ARCH: x64
+            OPENSSL_TARGET: VC-WIN64A
+            MSVC_ARCH: x64
+
           - target: i686-pc-windows_AES
             os: windows-latest
             ARCH: x86
             OPENSSL_TARGET: VC-WIN32
             MSVC_ARCH: x86
-#          - target: i686-pc-windows
-#            os: windows-latest
-#            ARCH: x86
-#            OPENSSL_TARGET: VC-WIN32
-#            MSVC_ARCH: x86
-#
-#          - target: i686-linux-musl_AES
-#            os: ubuntu-latest
-#            URL: i686-linux-musl
-#            OPENSSL_TARGET: linux-generic32
-#          - target: i686-linux-musl
-#            os: ubuntu-latest
-#            URL: i686-linux-musl
-#            OPENSSL_TARGET: linux-generic32
-#
-#          - target: mipsel-linux-musl_AES
-#            os: ubuntu-latest
-#            URL: mipsel-linux-muslsf
-#            OPENSSL_TARGET: linux-mips32
-#          - target: mipsel-linux-musl
-#            os: ubuntu-latest
-#            URL: mipsel-linux-muslsf
-#            OPENSSL_TARGET: linux-mips32
-#
-#          - target: mips-linux-musl_AES
-#            os: ubuntu-latest
-#            URL: mips-linux-muslsf
-#            OPENSSL_TARGET: linux-mips32
-#          - target: mips-linux-musl
-#            os: ubuntu-latest
-#            URL: mips-linux-muslsf
-#            OPENSSL_TARGET: linux-mips32
-#
-#          - target: arm-linux-musleabihf_AES
-#            os: ubuntu-latest
-#            URL: arm-linux-musleabihf
-#            OPENSSL_TARGET: linux-armv4
-#          - target: arm-linux-musleabihf
-#            os: ubuntu-latest
-#            URL: arm-linux-musleabihf
-#            OPENSSL_TARGET: linux-armv4
-#
-#          - target: arm-linux-musleabi_AES
-#            os: ubuntu-latest
-#            URL: arm-linux-musleabi
-#            OPENSSL_TARGET: linux-armv4
-#          - target: arm-linux-musleabi
-#            os: ubuntu-latest
-#            URL: arm-linux-musleabi
-#            OPENSSL_TARGET: linux-armv4
-#
-#          - target: aarch64-linux-musl_AES
-#            os: ubuntu-latest
-#            URL: aarch64-linux-musl
-#            OPENSSL_TARGET: linux-aarch64
-#          - target: aarch64-linux-musl
-#            os: ubuntu-latest
-#            URL: aarch64-linux-musl
-#            OPENSSL_TARGET: linux-aarch64
-#
-#          - target: armv7-linux-musleabihf_AES
-#            os: ubuntu-latest
-#            URL: armv7l-linux-musleabihf
-#            OPENSSL_TARGET: linux-armv4
-#          - target: armv7-linux-musleabihf
-#            os: ubuntu-latest
-#            URL: armv7l-linux-musleabihf
-#            OPENSSL_TARGET: linux-armv4
-#
-#          - target: armv7-linux-musleabi_AES
-#            os: ubuntu-latest
-#            URL: armv7m-linux-musleabi
-#            OPENSSL_TARGET: linux-armv4
-#          - target: armv7-linux-musleabi
-#            os: ubuntu-latest
-#            URL: armv7m-linux-musleabi
-#            OPENSSL_TARGET: linux-armv4
-#
+          - target: i686-pc-windows
+            os: windows-latest
+            ARCH: x86
+            OPENSSL_TARGET: VC-WIN32
+            MSVC_ARCH: x86
+
+          - target: i686-linux-musl_AES
+            os: ubuntu-latest
+            URL: i686-linux-musl
+            OPENSSL_TARGET: linux-generic32
+          - target: i686-linux-musl
+            os: ubuntu-latest
+            URL: i686-linux-musl
+            OPENSSL_TARGET: linux-generic32
+
+          - target: mipsel-linux-musl_AES
+            os: ubuntu-latest
+            URL: mipsel-linux-muslsf
+            OPENSSL_TARGET: linux-mips32
+          - target: mipsel-linux-musl
+            os: ubuntu-latest
+            URL: mipsel-linux-muslsf
+            OPENSSL_TARGET: linux-mips32
+
+          - target: mips-linux-musl_AES
+            os: ubuntu-latest
+            URL: mips-linux-muslsf
+            OPENSSL_TARGET: linux-mips32
+          - target: mips-linux-musl
+            os: ubuntu-latest
+            URL: mips-linux-muslsf
+            OPENSSL_TARGET: linux-mips32
+
+          - target: arm-linux-musleabihf_AES
+            os: ubuntu-latest
+            URL: arm-linux-musleabihf
+            OPENSSL_TARGET: linux-armv4
+          - target: arm-linux-musleabihf
+            os: ubuntu-latest
+            URL: arm-linux-musleabihf
+            OPENSSL_TARGET: linux-armv4
+
+          - target: arm-linux-musleabi_AES
+            os: ubuntu-latest
+            URL: arm-linux-musleabi
+            OPENSSL_TARGET: linux-armv4
+          - target: arm-linux-musleabi
+            os: ubuntu-latest
+            URL: arm-linux-musleabi
+            OPENSSL_TARGET: linux-armv4
+
+          - target: aarch64-linux-musl_AES
+            os: ubuntu-latest
+            URL: aarch64-linux-musl
+            OPENSSL_TARGET: linux-aarch64
+          - target: aarch64-linux-musl
+            os: ubuntu-latest
+            URL: aarch64-linux-musl
+            OPENSSL_TARGET: linux-aarch64
+
+          - target: armv7-linux-musleabihf_AES
+            os: ubuntu-latest
+            URL: armv7l-linux-musleabihf
+            OPENSSL_TARGET: linux-armv4
+          - target: armv7-linux-musleabihf
+            os: ubuntu-latest
+            URL: armv7l-linux-musleabihf
+            OPENSSL_TARGET: linux-armv4
+
+          - target: armv7-linux-musleabi_AES
+            os: ubuntu-latest
+            URL: armv7m-linux-musleabi
+            OPENSSL_TARGET: linux-armv4
+          - target: armv7-linux-musleabi
+            os: ubuntu-latest
+            URL: armv7m-linux-musleabi
+            OPENSSL_TARGET: linux-armv4
+
 #          - target: apple-mac_AES
 #            os: macos-latest
 #          - target: apple-mac
@@ -250,13 +250,14 @@ jobs:
 
           cd ..
 
-      - name: Windows Build (AES)
+      - name: Windows Build AES
         if: runner.os == 'windows' && endsWith(matrix.TARGET, '_AES')
         shell: pwsh
         run: |
           mkdir build
           cd build
 
+          # Windows uses BCrypt for AES, no OpenSSL needed
           cmake .. `
             -G "NMake Makefiles" `
             -DCMAKE_BUILD_TYPE=Release `
@@ -264,9 +265,8 @@ jobs:
             -DCMAKE_EXE_LINKER_FLAGS="/SUBSYSTEM:CONSOLE,6.01 /MACHINE:${{ matrix.ARCH }}" `
             -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded" `
             -DN2N_OPTION_AES=ON `
-            -DUSE_OPENSSL=1 `
-            -DOPENSSL_INCLUDE_DIR="${{ env.OPENSSL_PREFIX }}\include" `
-            -DOPENSSL_CRYPTO_LIBRARY="${{ env.OPENSSL_PREFIX }}\lib\libcrypto.lib;Crypt32.lib"
+            -DUSE_BCRYPT=1 `
+            -DBCRYPT_LIBRARY=bcrypt.lib
 
           nmake
           .\edge.exe -h || true
